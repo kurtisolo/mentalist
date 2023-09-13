@@ -18,7 +18,7 @@
                 </p>
               <label class="label" for="numero">Mettimi alla prova!</label>
               <div class="control">
-                <input class="input mt-2 mb-4" type="number" id="numero" v-model="numero" min="1" max="1000" placeholder="Scegli un numero tra 1 e 999">
+                <input class="input mt-2 mb-4" type="number" id="numero" v-model="numero" min="1" max="100" placeholder="Scegli un numero tra 1 e 100">
               </div>
             </div>
 
@@ -26,7 +26,7 @@
                 <button 
                 class="button mb-3 is-warning is-light is-large is-outlined" 
                 type="submit"
-                :disabled="!numero || numero < 1 || numero > 999"
+                :disabled="!numero || numero < 1 || numero > 100"
                 >
                 Invia
                 </button>
